@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int totalPictures = 52;
+            int rowsOfPictures = 3;
+            int fullRows = totalPictures / rowsOfPictures;
+            int exstraPictures = totalPictures % rowsOfPictures;
+
+            Console.OutputEncoding = Encoding.Unicode;
+            Console.WriteLine($"Всего картинок: {totalPictures}.");
+            Console.WriteLine($"Картинок в одном ряду: {rowsOfPictures}.");
+            Console.WriteLine($"Заполнилось рядов: {fullRows}.");
+            Console.WriteLine($"Осталось картинок: {exstraPictures}.");
+            Console.ReadKey();
+         }
+    }
+}
